@@ -1,0 +1,79 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+
+
+// personal Class
+
+.text-color{
+  	color: #999;
+  	text-align: center;
+  }
+
+  .main_thumb{
+  	text-align: center;
+  }
+
+
+.image {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px gray;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle-pic{
+    // -webkit-border-radius: 20%;
+    // border-radius: 30%;
+	// width: 200px; 
+	// height: 200px; 
+	height: 40vw; 
+     width: 40vw; 
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.myIonicButton{
+  background-color: #5aa1e3;
+}
+
+.tabbar{
+	background-color:#2967a0 !important;
+}
+
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon{
+	color:#d4313a;
+
+}.tabs-ios .tab-button .tab-button-icon{
+	color:#fff;
+}
+.tab-button-text{
+	color:#fff;
+}
+.banner{
+	height:200px !important;
+	width:100%;
+	overflow:hidden;
+}
