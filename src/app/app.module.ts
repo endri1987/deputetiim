@@ -8,6 +8,14 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { FindsPage } from '../pages/finds/finds';
 import { TabsPage } from '../pages/tabs/tabs';
+import { PublicationsPage } from '../pages/publications/publications';
+import { ParlamentiPage } from '../pages/parlamenti/parlamenti';
+import { DeputetiPage } from '../pages/deputeti/deputeti';
+import { RaportePage } from '../pages/raporte/raporte';
+import { PyetPage } from '../pages/pyet/pyet';
+
+import { HistorikuModal } from '../pages/parlamenti/modals/historiku/historiku';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,6 +28,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     FindsPage,
     TabsPage,
+    PublicationsPage,
+    ParlamentiPage,
+    DeputetiPage,
+    RaportePage,
+    PyetPage,
+    HistorikuModal
   ],
   imports: [
     BrowserModule,
@@ -33,6 +47,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     FindsPage,
     TabsPage,
+    PublicationsPage,
+    ParlamentiPage,
+    DeputetiPage,
+    RaportePage,
+    PyetPage,
+    HistorikuModal    
   ],
   providers: [
     StatusBar,

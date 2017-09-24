@@ -8,6 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { FindsPage } from '../pages/finds/finds';
 import { TabsPage } from '../pages/tabs/tabs';
+import { PublicationsPage } from '../pages/publications/publications';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,6 +27,9 @@ export class MyApp {
     this.pages = [
       { title: 'Kreu', component: TabsPage },
       { title: 'Rreth Projektit', component: AboutPage },
+      { title: 'Publikime', component: PublicationsPage },
+      { title: 'Gjetjet Kryesore', component: FindsPage },
+      { title: 'Kontakto', component: ContactPage },
     ];      
   } 
 

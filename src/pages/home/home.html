@@ -27,89 +27,17 @@
 <ion-grid>
 	
 	<ion-row>
-		<ion-col col-6>
+		<ion-col col-6 *ngFor="let p of pages" (click)="openPage(p)">
 			<div class="main_grid">
 				<div class="main_thumb">
-					<img class="circle-pic" src="assets/img/1.png"/>
+					<img class="" src="assets/img/1.png"/>
 				</div>
-				<button ion-button full class="myIonicButton">Dolor Amet</button>
-				<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi</p>
+				<button ion-button full class="myIonicButton"> 		
+					{{p.title}}
+				</button>
 			</div>
-		</ion-col>
-		<ion-col col-6>
-			<div class="main_grid">
-				<div class="main_thumb">
-					<img class="circle-pic" src="assets/img/1.png"/>
-				</div>
-				<button ion-button full class="myIonicButton">Lorem Ipusim</button>
-				<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi</p>
-			</div>
-		</ion-col>
-	</ion-row>
-
-	<ion-row>
-		<ion-col col-6>
-			<div class="main_grid">
-				<div class="main_thumb">
-					<img class="circle-pic" src="assets/img/1.png"/>
-				</div>
-				<button ion-button full class="myIonicButton">Dolor Amet</button>
-				<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi</p>
-			</div>
-		</ion-col>
-		<ion-col col-6>
-			<div class="main_grid">
-				<div class="main_thumb">
-					<img class="circle-pic" src="assets/img/1.png"/>
-				</div>
-				<button ion-button full class="myIonicButton">Lorem Ipusim</button>
-				<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi</p>
-			</div>
-		</ion-col>
-	</ion-row>
-
-	<ion-row>
-		<ion-col col-6>
-			<div class="main_grid">
-			<div class="main_thumb">
-				<img class="circle-pic" src="assets/img/1.png"/>
-			</div>
-			<button ion-button full class="myIonicButton">Dolor Amet</button>
-			<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi</p>
-			</div>
-		</ion-col>
-		<ion-col col-6>
-			<div class="main_grid">
-				<div class="main_thumb">
-					<img class="circle-pic" src="assets/img/1.png"/>
-				</div>
-				<button ion-button full class="myIonicButton">Lorem Ipusim</button>
-				<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi</p>
-			</div>
-		</ion-col>
-	</ion-row>
-
-	<ion-row>
-		<ion-col col-6>
-			<div class="main_grid">
-				<div class="main_thumb">
-					<img class="circle-pic" src="assets/img/1.png"/>
-				</div>
-				<button ion-button full class="myIonicButton">Dolor Amet</button>
-				<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi</p>
-			</div>
-			</ion-col>
-			<ion-col col-6>
-			<div class="main_grid">
-				<div class="main_thumb">
-					<img class="circle-pic" src="assets/img/1.png"/>
-				</div>
-				<button ion-button full class="myIonicButton">Lorem Ipusim</button>
-				<p class="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi</p>
-			</div>
-		</ion-col>
-	</ion-row>
-
+		</ion-col> 
+	</ion-row>	
 </ion-grid>
 
 </ion-content>
