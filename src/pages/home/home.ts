@@ -5,6 +5,9 @@ import { ParlamentiPage } from '../parlamenti/parlamenti';
 import { DeputetiPage } from '../deputeti/deputeti';
 import { RaportePage } from '../raporte/raporte';
 import { PyetPage } from '../pyet/pyet';
+import { LigjetPage } from '../ligjet/ligjet';
+import { SeancatPage } from '../seancat/seancat';
+import { KomisionetPage } from '../komisionet/komisionet';
 
 @Component({
   selector: 'page-home',
@@ -16,10 +19,13 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
     this.pages = [
-      { title: 'Parlamenti im', component: ParlamentiPage, icon: '' },
-      { title: 'Deputeti im', component: DeputetiPage, icon: '' },
-      { title: 'Studime dhe Raporte', component: RaportePage, icon: '' },
-      { title: 'Pyet Deputetin', component: PyetPage, icon: '' },
+      { title: 'Parlamenti im', component: ParlamentiPage, icon: 'bicycle' },
+      { title: 'Deputeti im', component: DeputetiPage, icon: 'home' },
+      { title: 'Studime dhe Raporte', component: RaportePage, icon: 'bowtie' },
+      { title: 'Pyet Deputetin', component: PyetPage, icon: 'build' },
+      { title: 'Gjithcka Mbi Ligjet', component: LigjetPage, icon: 'cafe' },
+      { title: 'Seancat Plenare', component: SeancatPage, icon: 'flag' },
+      { title: 'Komisionet Parlamentare', component: KomisionetPage, icon: 'flag' },
     ]; 
   }
 

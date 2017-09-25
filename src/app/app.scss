@@ -77,3 +77,22 @@
 	width:100%;
 	overflow:hidden;
 }
+
+.main_grid{
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 20px 0;
+
+  .icon{
+  font-size: 60px;
+  color: #2f2f2f;
+  }
+  .main_title{
+    color: #2f2f2f;
+  }
+}
+
+.logo{
+  padding:0;
+}

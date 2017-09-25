@@ -13,6 +13,9 @@ import { ParlamentiPage } from '../pages/parlamenti/parlamenti';
 import { DeputetiPage } from '../pages/deputeti/deputeti';
 import { RaportePage } from '../pages/raporte/raporte';
 import { PyetPage } from '../pages/pyet/pyet';
+import { LigjetPage } from '../pages/ligjet/ligjet';
+import { SeancatPage } from '../pages/seancat/seancat';
+import { KomisionetPage } from '../pages/komisionet/komisionet';
 
 import { HistorikuModal } from '../pages/parlamenti/modals/historiku/historiku';
 
@@ -33,7 +36,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DeputetiPage,
     RaportePage,
     PyetPage,
+    LigjetPage,
+    SeancatPage,
+    KomisionetPage,
     HistorikuModal
+
   ],
   imports: [
     BrowserModule,
@@ -52,6 +59,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DeputetiPage,
     RaportePage,
     PyetPage,
+    LigjetPage,
+    SeancatPage,
+    KomisionetPage,
     HistorikuModal    
   ],
   providers: [
