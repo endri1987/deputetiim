@@ -16,6 +16,7 @@ import { PyetPage } from '../pages/pyet/pyet';
 import { LigjetPage } from '../pages/ligjet/ligjet';
 import { SeancatPage } from '../pages/seancat/seancat';
 import { KomisionetPage } from '../pages/komisionet/komisionet';
+import { TransparencaPage } from '../pages/transparenca/transparenca';
 
 import { HistorikuModal } from '../pages/parlamenti/modals/historiku/historiku';
 
@@ -39,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LigjetPage,
     SeancatPage,
     KomisionetPage,
+    TransparencaPage,
     HistorikuModal
 
   ],
@@ -62,6 +64,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LigjetPage,
     SeancatPage,
     KomisionetPage,
+    TransparencaPage,
     HistorikuModal    
   ],
   providers: [

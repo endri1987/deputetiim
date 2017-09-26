@@ -8,6 +8,7 @@ import { PyetPage } from '../pyet/pyet';
 import { LigjetPage } from '../ligjet/ligjet';
 import { SeancatPage } from '../seancat/seancat';
 import { KomisionetPage } from '../komisionet/komisionet';
+import { TransparencaPage } from '../transparenca/transparenca';
 
 @Component({
   selector: 'page-home',
@@ -26,6 +27,7 @@ export class HomePage {
       { title: 'Gjithcka Mbi Ligjet', component: LigjetPage, icon: 'cafe' },
       { title: 'Seancat Plenare', component: SeancatPage, icon: 'flag' },
       { title: 'Komisionet Parlamentare', component: KomisionetPage, icon: 'flag' },
+      { title: 'Transparenca financiare', component: TransparencaPage, icon: 'bicycle' },
     ]; 
   }
 
