@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lig</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    
+    <ion-col col-12>
+      <p>Funksioni, historia, legjislacioni, legjislatura, struktura drejtuese
+      Jeta parlamentare në Shqipëri daton më 1920. Pas vetëm katër vitesh sistem konkurrues partiak Shqipëria kaloi në sistem politik pa parti politike, më pas në Luftën e Dytë Botërore, më pas për 46 vjet, me sistem njëpartiak. Pluralizmi politik u lejua më 1990 dhe prej vitit 1991 parlamenti funksionon pa ndërprerje në formësim të funksionit si institucioni kryesor në sistemin politik e qeverisës.</p>
+
+      <p>Përgjatë më shumë se dy dekadave institucioni i parlamentit ka tentuar të krijojë profilin e tij kushtetues, si dhe të luajë rol aktiv në jetën politike. Me arritje dhe dështime ai ka krijuar tashmë një traditë të brishtë dhe është pranuar si institucioni kryesor politik përfaqësues dhe vendimmarrës.</p>
+    </ion-col>
+
+    <ion-col col-12>
+      <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="openModal(item)">
+          {{ item.title }}
+        </button>  
+      </ion-list>
+    </ion-col>  
+
+  </ion-grid>
+</ion-content>  

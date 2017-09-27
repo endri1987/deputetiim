@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { ModalController } from 'ionic-angular';
 import { HistorikuModal } from './modals/historiku/historiku';
 import { DrejtuesModal } from './modals/drejtues/drejtues';
+import { LigjvenesitModal } from './modals/ligjvenesit/ligjvenesit';
 
 @Component({
   selector: 'page-parlamenti',
@@ -16,6 +17,7 @@ export class ParlamentiPage {
   	this.items = [
       { title: 'Historiku', component: HistorikuModal, type: 'Modal' },
       { title: 'Drejtuest ne Vite', component: DrejtuesModal, type: 'Modal' },
+      { title: 'Ligjvenesit shqiptarë në vite', component: LigjvenesitModal, type: 'Modal' },
     ]; 
   }
 

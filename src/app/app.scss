@@ -81,18 +81,22 @@
 .main_grid{
   text-align: center;
   margin-bottom: 30px;
-  box-shadow: 1px 2px 4px #2967a0;
+  box-shadow: 1px 2px 4px #444444;
   padding: 20px 0;
+  background-color: #f9f9f9;
 
   .icon{
   font-size: 60px;
-  color: #2967a0;
+  color: #444444;
   }
   .main_title{
-    color: #2967a0;
+    color: #444444;
   }
 }
 
 .logo{
   padding:0;
+}
+p{
+  color: #3c454c;
 }

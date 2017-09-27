@@ -25,10 +25,10 @@ export class MyApp {
  
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Kreu', component: TabsPage },
-      { title: 'Rreth Projektit', component: AboutPage },
-      { title: 'Publikime', component: PublicationsPage },
-      { title: 'Gjetjet Kryesore', component: FindsPage },
+      { title: 'Kreu', component: TabsPage},
+      { title: 'Rreth Projektit', component: AboutPage},
+      { title: 'Publikime', component: PublicationsPage},
+      { title: 'Gjetjet Kryesore', component: FindsPage},
       { title: 'Kontakto', component: ContactPage },
     ];      
   } 
