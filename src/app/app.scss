@@ -87,10 +87,11 @@
 
   .icon{
   font-size: 60px;
-  color: #444444;
+  color: #2967a0;
   }
   .main_title{
     color: #444444;
+    font-weight: bold;
   }
 }
 
@@ -99,4 +100,13 @@
 }
 p{
   color: #3c454c;
+}
+
+.item-block{
+      color: #2967a0;
+      font-weight: bold;
+}
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+  color: #2967a0;
 }
