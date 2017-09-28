@@ -7,7 +7,7 @@ import { ViewController } from 'ionic-angular';
   templateUrl: 'ligjvenesit.html'
 })
 
-export class LigjevenesitModal {
+export class LigjvenesitModal {
 
   constructor(public navCtrl: NavController, public viewCtrl: ViewController) { 
 

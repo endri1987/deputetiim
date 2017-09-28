@@ -11,6 +11,7 @@ import { ZgjedhjeModal } from './modals/zgjedhje/zgjedhje';
 import { FunksionetModal } from './modals/funksionet/funksionet';
 import { NdertesaModal } from './modals/ndertesa/ndertesa';
 
+
 @Component({
   selector: 'page-parlamenti',
   templateUrl: 'parlamenti.html'
