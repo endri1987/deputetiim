@@ -20,13 +20,24 @@ import { TransparencaPage } from '../pages/transparenca/transparenca';
 
 import { HistorikuModal } from '../pages/parlamenti/modals/historiku/historiku';
 import { DrejtuesModal } from '../pages/parlamenti/modals/drejtues/drejtues';
-import { LigjevenesitModal } from '../pages/parlamenti/modals/ligjvenesit/ligjvenesit';
+import { LigjvenesitModal } from '../pages/parlamenti/modals/ligjvenesit/ligjvenesit';
 import { LegjislaturatModal } from '../pages/parlamenti/modals/legjislaturat/legjislaturat';
 import { KushtetutaModal } from '../pages/parlamenti/modals/kushtetuta/kushtetuta';
 import { RregullorjaModal } from '../pages/parlamenti/modals/rregullorja/rregullorja';
 import { ZgjedhjeModal } from '../pages/parlamenti/modals/zgjedhje/zgjedhje';
 import { FunksionetModal } from '../pages/parlamenti/modals/funksionet/funksionet';
 import { NdertesaModal } from '../pages/parlamenti/modals/ndertesa/ndertesa';
+
+import { KryetariModal } from '../pages/parlamenti/modals/kryetari/kryetari';
+import { ZevendesModal } from '../pages/parlamenti/modals/zevendes/zevendes';
+import { ByrojaModal } from '../pages/parlamenti/modals/byroja/byroja';
+import { SekretariatetModal } from '../pages/parlamenti/modals/sekretariatet/sekretariatet';
+import { KonferencaModal } from '../pages/parlamenti/modals/konferenca/konferenca';
+import { KomisionetModal } from '../pages/parlamenti/modals/komisionet/komisionet';
+import { NenkomisionetModal } from '../pages/parlamenti/modals/nenkomisionet/nenkomisionet';
+import { KeshillatModal } from '../pages/parlamenti/modals/keshillat/keshillat';
+import { GrupetModal } from '../pages/parlamenti/modals/grupet/grupet';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -50,13 +61,22 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TransparencaPage,
     HistorikuModal,
     DrejtuesModal,
-    LigjevenesitModal,
+    LigjvenesitModal,
     LegjislaturatModal,
     KushtetutaModal,
     RregullorjaModal,
     ZgjedhjeModal,
     FunksionetModal,
-    NdertesaModal
+    NdertesaModal,
+    KryetariModal,
+    ZevendesModal,
+    ByrojaModal,
+    SekretariatetModal,
+    KonferencaModal,
+    KomisionetModal,
+    NenkomisionetModal,
+    KeshillatModal,
+    GrupetModal
   ],
   imports: [
     BrowserModule,
@@ -81,13 +101,22 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TransparencaPage,
     HistorikuModal,
     DrejtuesModal,
-    LigjevenesitModal,
+    LigjvenesitModal,
     LegjislaturatModal,
     KushtetutaModal,
     RregullorjaModal,
     ZgjedhjeModal,
     FunksionetModal,
-    NdertesaModal        
+    NdertesaModal,
+    KryetariModal,
+    ZevendesModal,
+    ByrojaModal,
+    SekretariatetModal,
+    KonferencaModal,
+    KomisionetModal,
+    NenkomisionetModal,
+    KeshillatModal,
+    GrupetModal   
   ],
   providers: [
     StatusBar,
