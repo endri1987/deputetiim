@@ -4,11 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Parlamenti im</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="presentPopover($event)">
-        <ion-icon name="more"></ion-icon>
-      </button>
-    </ion-buttons>
+    
   </ion-navbar>
 </ion-header>
 
@@ -23,10 +19,11 @@
     </ion-col>
 
     <ion-col col-12>
-      <ion-list>
-        <button ion-item *ngFor="let item of items" (click)="openModal(item)">
-          {{ item.title }}
-        </button>  
+      <ion-list *ngFor="let modal of items">
+         <ion-list-header>{{modal.category}}</ion-list-header>
+          <button ion-item *ngFor="let item of modal.items" (click)="openModal(item)">
+            {{ item.title }}
+          </button>  
       </ion-list>
     </ion-col>  
 

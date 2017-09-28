@@ -85,7 +85,7 @@
   padding: 20px 0;
   background-color: #f9f9f9;
 
-  .icon{
+  .icon, .mainLogo{
   font-size: 60px;
   color: #2967a0;
   }
@@ -109,4 +109,48 @@ p{
 
 .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
   color: #2967a0;
+}
+
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+  color: #fff;
+}
+
+
+.menu-inner{
+  .toolbar-ios{
+  min-height: 150px;
+}
+}
+
+.header-ios .toolbar-ios:last-child .toolbar-background-ios{
+  background-color:#2967a0;
+}
+
+.bar-button-ios[icon-only] ion-icon{
+  color: #fff;
+}
+
+.toolbar-title-ios{
+  color: #fff;
+}
+.mainTitleModal{
+  color: #2967a0;
+  font-weight: bold;
+}
+
+.mainNav{
+  font-weight: bold;
+  font-size: 16px;
+  color: #2967a0;
+}
+
+
+
+.card{
+
+.ion-label{
+  white-space: normal !important;
+}
+
 }

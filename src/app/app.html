@@ -2,18 +2,38 @@
 	<ion-menu [content]="content">
 	  <ion-header>
 	    <ion-toolbar>
-	      <ion-title>Menu</ion-title>
+
+
+	      <ion-title>  <p style="text-align:right;">
+		  	<img src="assets/img/logow14040.png"/>
+		  </p>
+
+
+	      </ion-title>
 	    </ion-toolbar>
 	  </ion-header>
 	  <ion-content>
-	    <ion-list>
-	      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-	    		{{p.title}}
-	      </button>
-	    </ion-list>
+
+
+
+            <ion-list>
+                <ion-item menuClose *ngFor="let p of pages">
+                    <ion-icon name="{{p.icon}}"></ion-icon>
+                    <div class="mainNav" (click)="openPage(p)">
+                        {{p.title}}
+                    </div>
+                </ion-item>
+            </ion-list>
+
+
 	  </ion-content>
 	</ion-menu>
 	<ion-nav id="nav" #content [root]="rootPage" main name="app"></ion-nav>
 </ion-split-pane>	
+
+
+
+
+
 
 

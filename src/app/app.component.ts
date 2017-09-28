@@ -18,18 +18,18 @@ export class MyApp {
 
   rootPage:any = TabsPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
  
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Kreu', component: TabsPage},
-      { title: 'Rreth Projektit', component: AboutPage},
-      { title: 'Publikime', component: PublicationsPage},
-      { title: 'Gjetjet Kryesore', component: FindsPage},
-      { title: 'Kontakto', component: ContactPage },
+      { title: 'Kreu', component: TabsPage, icon: ''},
+      { title: 'Rreth Projektit', component: AboutPage, icon: ''},
+      { title: 'Publikime', component: PublicationsPage, icon: ''},
+      { title: 'Gjetjet Kryesore', component: FindsPage, icon: ''},
+      { title: 'Kontakto', component: ContactPage, icon: 'flag'},
     ];      
   } 
 
