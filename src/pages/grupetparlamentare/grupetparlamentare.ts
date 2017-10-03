@@ -7,8 +7,5 @@ import { NavController } from 'ionic-angular';
 })
 export class GrupetParlamentarePage {
 
-  constructor(public navCtrl: NavController) {
-
-  }
 
 }

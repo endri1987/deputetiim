@@ -9,4 +9,34 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    
+    <ion-col col-12>
+      <p>Komisionet për mbrojtje dhe siguri janë organe të
+			specializuara të parlamentit që i japin këshilla dhe i
+			bëjnë rekomandime seancës plenare për ligje ose
+			vendime që lidhen me mbrojtjen kombëtare dhe
+			sigurinë e qytetarëve.</p>
+
+      <p>Ka dy lloje kryesore komisionesh. Disa janë të
+			përkohshme, që krijohen me një mandat të veçantë
+			dhe të ngushtë, siç janë ato që merren me një
+			projektligj ose çështje të caktuar. Të tjerat janë
+			komisione të përhershme, që japin këshilla për
+			fushën e tyre të specializuar gjatë gjithë periudhës
+			legjislative. Komisionet e përhershme sigurojnë
+			vazhdimësi më të madhe dhe mundësojnë krijimin e
+			ekspertizës së anëtarëve.</p>
+    </ion-col>
+
+    <ion-col col-12>
+      <ion-list *ngFor="let modal of items">
+         <ion-list-header>{{modal.category}}</ion-list-header>
+          <button ion-item *ngFor="let item of modal.items" (click)="openModal(item.component)">
+            {{ item.title }}
+          </button>  
+      </ion-list>
+    </ion-col>  
+
+  </ion-grid>
 </ion-content>  

@@ -40,6 +40,15 @@ import { NenkomisionetModal } from '../pages/parlamenti/modals/nenkomisionet/nen
 import { KeshillatModal } from '../pages/parlamenti/modals/keshillat/keshillat';
 import { GrupetModal } from '../pages/parlamenti/modals/grupet/grupet';
 
+import { KclapdnModal } from '../pages/komisionet/modals/kclapdn/kclapdn';
+import { KIntegrimModal } from '../pages/komisionet/modals/kintegrim/kintegrim';
+import { KPJashtModal } from '../pages/komisionet/modals/kpjasht/kpjasht';
+import { KEkonomiModal } from '../pages/komisionet/modals/kekonomi/kekonomi';
+import { KSiguriModal } from '../pages/komisionet/modals/ksiguri/ksiguri';
+import { KTregtiModal } from '../pages/komisionet/modals/ktregti/ktregti';
+import { KPuneModal } from '../pages/komisionet/modals/kpune/kpune';
+import { KEdukimModal } from '../pages/komisionet/modals/kedukim/kedukim';
+import { NenkomisionetModal2 } from '../pages/komisionet/modals/nenkomisionet/nenkomisionet';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -80,7 +89,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     KeshillatModal,
     GrateDeputetePage,
     GrupetParlamentarePage,
-    GrupetModal
+    GrupetModal,
+    KclapdnModal,
+    KIntegrimModal,
+    KPJashtModal,
+    KEkonomiModal,
+    KSiguriModal,
+    KTregtiModal,
+    KPuneModal,
+    KEdukimModal,
+    NenkomisionetModal2
   ],
   imports: [
     BrowserModule,
@@ -122,7 +140,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     KeshillatModal,
     GrateDeputetePage,
     GrupetParlamentarePage,
-    GrupetModal   
+    GrupetModal,
+    KclapdnModal,
+    KIntegrimModal,
+    KPJashtModal,
+    KEkonomiModal,
+    KSiguriModal,
+    KTregtiModal,
+    KPuneModal,
+    KEdukimModal,
+    NenkomisionetModal2  
   ],
   providers: [
     StatusBar,

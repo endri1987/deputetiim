@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ModalController } from 'ionic-angular';
+
 import { HistorikuModal } from './modals/historiku/historiku';
 import { DrejtuesModal } from './modals/drejtues/drejtues';
 import { LigjvenesitModal } from './modals/ligjvenesit/ligjvenesit';
@@ -63,7 +64,7 @@ export class ParlamentiPage {
   }
 
   openModal(modalItem) {
-    let modal = this.modalCtrl.create(HistorikuModal);
+    let modal = this.modalCtrl.create(modalItem.component);
     modal.present(modalItem.component);
   }
 
