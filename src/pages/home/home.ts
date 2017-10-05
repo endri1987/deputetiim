@@ -11,6 +11,8 @@ import { KomisionetPage } from '../komisionet/komisionet';
 import { TransparencaPage } from '../transparenca/transparenca';
 import { GrateDeputetePage } from '../grateDeputete/grateDeputete';
 import { GrupetParlamentarePage } from '../grupetparlamentare/grupetparlamentare';
+import { InstitucionetPavaruaraPage } from '../institucionetepavaruara/institucionetepavaruara';
+import { SondazhedhevlerësimePage } from '../sondazhedhevlerësime/sondazhedhevlerësime';
 
 @Component({
   selector: 'page-home',
@@ -32,6 +34,8 @@ export class HomePage {
       { title: 'Transparenca financiare', component: TransparencaPage, icon: 'bicycle' },
       { title: 'Gratë Deputete', component: GrateDeputetePage, icon: 'woman' },
       { title: 'Grupet Parlamentare', component: GrupetParlamentarePage, icon: 'bowtie' },
+      { title: 'Institucionet e Pavaruara', component: InstitucionetPavaruaraPage, icon: 'bowtie' },
+      { title: 'Sondazhe dhe vlerësime', component: SondazhedhevlerësimePage, icon: 'flag' },
     ]; 
   }
 

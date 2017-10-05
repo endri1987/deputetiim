@@ -19,6 +19,8 @@ import { KomisionetPage } from '../pages/komisionet/komisionet';
 import { TransparencaPage } from '../pages/transparenca/transparenca';
 import { GrateDeputetePage } from '../pages/grateDeputete/grateDeputete';
 import { GrupetParlamentarePage } from '../pages/grupetparlamentare/grupetparlamentare';
+import { InstitucionetPavaruaraPage } from '../pages/institucionetepavaruara/institucionetepavaruara';
+import { SondazhedhevlerësimePage } from '../pages/sondazhedhevlerësime/sondazhedhevlerësime';
 
 import { HistorikuModal } from '../pages/parlamenti/modals/historiku/historiku';
 import { DrejtuesModal } from '../pages/parlamenti/modals/drejtues/drejtues';
@@ -98,6 +100,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     KTregtiModal,
     KPuneModal,
     KEdukimModal,
+    InstitucionetPavaruaraPage,
+    SondazhedhevlerësimePage,
     NenkomisionetModal2
   ],
   imports: [
@@ -149,6 +153,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     KTregtiModal,
     KPuneModal,
     KEdukimModal,
+    InstitucionetPavaruaraPage,
+    SondazhedhevlerësimePage,
     NenkomisionetModal2  
   ],
   providers: [
