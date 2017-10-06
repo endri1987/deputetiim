@@ -166,3 +166,15 @@ p{
 .navIcon{
   font-size: 30px;
 }
+
+.underline{
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+  color: #606060;
+  .nameTable{
+    font-weight: bold;
+    color: #2967a0;
+  }
+  .postiTable{
+  }
+}
