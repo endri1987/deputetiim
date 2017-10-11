@@ -10,4 +10,13 @@
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item *ngFor="let deputeti of deputetetList">
+      <ion-avatar item-start>
+        <img src="{{deputeti.fotografia}}">
+      </ion-avatar>
+      <h2>{{deputeti.emrimbiemri}}</h2>
+      <p>Ugh. As if.</p>
+    </ion-item>
+  </ion-list>
 </ion-content>  

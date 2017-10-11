@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
@@ -51,6 +52,8 @@ import { KTregtiModal } from '../pages/komisionet/modals/ktregti/ktregti';
 import { KPuneModal } from '../pages/komisionet/modals/kpune/kpune';
 import { KEdukimModal } from '../pages/komisionet/modals/kedukim/kedukim';
 import { NenkomisionetModal2 } from '../pages/komisionet/modals/nenkomisionet/nenkomisionet';
+
+import { DeputetetService } from '../providers/deputetet-service';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -106,7 +109,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -160,7 +164,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DeputetetService
   ]
 })
 export class AppModule {}
