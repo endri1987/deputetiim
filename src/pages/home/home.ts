@@ -35,7 +35,7 @@ export class HomePage {
       { title: 'Gratë Deputete', component: GrateDeputetePage, icon: 'woman' },
       { title: 'Grupet Parlamentare', component: GrupetParlamentarePage, icon: 'bowtie' },
       { title: 'Institucionet e Pavaruara', component: InstitucionetPavaruaraPage, icon: 'bowtie' },
-      { title: 'Sondazhe dhe vlerësime', component: SondazhedhevlerësimePage, icon: 'flag' },
+      { title: 'Sondazhe dhe vlerësime', component: SondazhedhevlerësimePage, icon: 'md-contacts' },
     ]; 
   }
 
