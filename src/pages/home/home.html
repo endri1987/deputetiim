@@ -30,13 +30,13 @@
 	
 	<ion-row>
 		<ion-col col-6 *ngFor="let p of pages" (click)="openPage(p)">
-			<div  class="main_grid">
-				<ion-icon name="{{p.icon}}"></ion-icon>
+			<div id="animated-example" class="main_grid">
+				<ion-icon  class="animated bounce" name="{{p.icon}}"></ion-icon>
 		<!-- 		<button ion-button full class="myIonicButton">
 					{{p.title}}
 				</button> -->
-				<div id="animated-example" class="main_title">
-					<div class="animated bounce">{{p.title}}</div>
+				<div class="main_title">
+					{{p.title}}
 				</div>
 			</div>
 		</ion-col> 

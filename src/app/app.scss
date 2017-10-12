@@ -180,12 +180,15 @@ p{
 }
 
 
+
+
+
 // animation css
 
 
 .animated {
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-timing-function: linear;
@@ -210,4 +213,5 @@ p{
 }
 
 #animated-example {
+
 }
