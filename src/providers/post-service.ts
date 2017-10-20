@@ -7,7 +7,7 @@ import {Observable} from  'rxjs/Observable';
 export class PostService {
 
   private url: string = "http://deputetim.al/service/index.php/posts"
-  perpage:number = 5;
+  perpage:number = 20;
 
   constructor(private http:Http) {
   	//console.log('servisi i postave');

@@ -22,6 +22,7 @@ import { GrateDeputetePage } from '../pages/grateDeputete/grateDeputete';
 import { GrupetParlamentarePage } from '../pages/grupetparlamentare/grupetparlamentare';
 import { InstitucionetPavaruaraPage } from '../pages/institucionetepavaruara/institucionetepavaruara';
 import { SondazhedhevlerësimePage } from '../pages/sondazhedhevlerësime/sondazhedhevlerësime';
+import { DetailsPage } from '../pages/details/details';
 
 import { HistorikuModal } from '../pages/parlamenti/modals/historiku/historiku';
 import { DrejtuesModal } from '../pages/parlamenti/modals/drejtues/drejtues';
@@ -106,7 +107,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     KEdukimModal,
     InstitucionetPavaruaraPage,
     SondazhedhevlerësimePage,
-    NenkomisionetModal2
+    NenkomisionetModal2,
+    DetailsPage
   ],
   imports: [
     BrowserModule,
@@ -160,7 +162,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     KEdukimModal,
     InstitucionetPavaruaraPage,
     SondazhedhevlerësimePage,
-    NenkomisionetModal2  
+    NenkomisionetModal2,
+    DetailsPage 
   ],
   providers: [
     StatusBar,

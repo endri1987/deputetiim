@@ -9,7 +9,7 @@
 
 <ion-content class="cards-bg social-cards">
 
-  <ion-card *ngFor="let post of postsList">
+  <ion-card *ngFor="let post of postsList" (click)="viewPost(post)">
     <ion-item >
       <h2>{{post.post_title}}</h2>
       <p>{{post.post_date_gmt}}</p>
