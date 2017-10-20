@@ -9,13 +9,13 @@
 
 <ion-content class="cards-bg social-cards">
 
-  <ion-card>
-    <ion-item>
-      <h2>Kuvendi i ri: 56% prurje të reja. ikin liberalët, mbijetojnë militantët</h2>
-      <p>November 5, 1955</p>
+  <ion-card *ngFor="let post of postsList">
+    <ion-item >
+      <h2>{{post.post_title}}</h2>
+      <p>{{post.post_date_gmt}}</p>
     </ion-item>
 
-    <img src="assets/img/1.png"/>
+    <img *ngIf="post.thumbnail" src="assets/img/1.png" />
     <!-- <img src="assets/img/1.png"/> -->
 
     <ion-card-content>
@@ -23,4 +23,9 @@
     </ion-card-content>
 
   </ion-card>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
 </ion-content>

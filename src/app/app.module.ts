@@ -54,6 +54,7 @@ import { KEdukimModal } from '../pages/komisionet/modals/kedukim/kedukim';
 import { NenkomisionetModal2 } from '../pages/komisionet/modals/nenkomisionet/nenkomisionet';
 
 import { DeputetetService } from '../providers/deputetet-service';
+import { PostService } from '../providers/post-service';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -165,7 +166,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DeputetetService
+    DeputetetService,
+    PostService
   ]
 })
 export class AppModule {}
