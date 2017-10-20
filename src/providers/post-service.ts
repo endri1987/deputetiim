@@ -6,7 +6,7 @@ import {Observable} from  'rxjs/Observable';
 @Injectable()
 export class PostService {
 
-  private url: string = "http://localhost/service/index.php/posts"
+  private url: string = "http://deputetim.al/service/index.php/posts"
   perpage:number = 5;
 
   constructor(private http:Http) {

@@ -8,7 +8,7 @@ import {Observable} from  'rxjs/Observable';
 @Injectable()
 export class DeputetetService {
 
-  private url: string = "http://localhost/service/index.php/deputetet"
+  private url: string = "http://deputetim.al/service/index.php/deputetet"
 
   constructor(private http:Http) {
   	//console.log('servisi i deputeteve');
