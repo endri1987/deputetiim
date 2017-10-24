@@ -24,7 +24,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
     this.pages = [
-      { title: 'Parlamenti im', component: ParlamentiPage, icon: 'bicycle', bg: 'parlamenti'},
+      { title: 'Parlamenti im', component: ParlamentiPage, icon: 'bicycle', bg: 'parlamenti animated fadeInRight'},
       { title: 'Deputeti im', component: DeputetiPage, icon: 'home' , bg: 'deputeti'},
       { title: 'Studime dhe Raporte', component: RaportePage, icon: 'bowtie', bg: 'studime' },
       { title: 'Pyet Deputetin', component: PyetPage, icon: 'build' , bg: 'pyetDeputetin'},

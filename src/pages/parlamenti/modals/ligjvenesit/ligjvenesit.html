@@ -1,15 +1,15 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Lig</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="presentPopover($event)">
-        <ion-icon name="more"></ion-icon>
+  <ion-toolbar>
+    <ion-title>
+      Ligjvenesit Shqiptare ne Vite
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="white" showWhen="ios">Mbylle</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
       </button>
     </ion-buttons>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
