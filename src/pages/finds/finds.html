@@ -7,25 +7,27 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="cards-bg social-cards">
-
-  <ion-card *ngFor="let post of postsList" (click)="viewPost(post)">
-    <ion-item >
-      <h2>{{post.post_title}}</h2>
-      <p>{{post.post_date_gmt}}</p>
-    </ion-item>
-
-    <img *ngIf="post.thumbnail" src="assets/img/1.png" />
-    <!-- <img src="assets/img/1.png"/> -->
-
-    <ion-card-content>
-      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
-    </ion-card-content>
-
-  </ion-card>
-
-  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-    <ion-infinite-scroll-content></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
-
-</ion-content>
+  <ion-content class="cards-bg social-cards">
+<div class="gjetjetStyle">
+  
+    <ion-card *ngFor="let post of postsList" (click)="viewPost(post)">
+      <ion-item >
+        <h2>{{post.post_title}}</h2>
+        <p class="findsDate">{{post.post_date_gmt}}</p>
+      </ion-item>
+  
+      <img *ngIf="post.thumbnail" src="assets/img/1.png" />
+      <!-- <img src="assets/img/1.png"/> -->
+  
+      <ion-card-content padding>
+        <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+      </ion-card-content>
+  
+    </ion-card>
+  
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  
+</div>
+  </ion-content>
