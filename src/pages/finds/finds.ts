@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 import { PostService } from '../../providers/post-service';
-
+import { DetailsPage } from '../details/details';
 
 @Component({
   selector: 'page-finds',
@@ -14,7 +14,10 @@ export class FindsPage {
 
   private start:number = 0;
 
-  constructor(private postService: PostService, private toastCtrl: ToastController) {
+  constructor( 
+    private navCtrl: NavController, 
+    private postService: PostService, 
+    private toastCtrl: ToastController) {
   	this.loadPosts();
   }
 
@@ -57,6 +60,12 @@ export class FindsPage {
        infiniteScroll.complete();
      });
      
+  }
+
+  viewPost(post) {
+    this.navCtrl.push(DetailsPage, {
+      item: post
+    })
   }
 
  //  infiniteScroll(ev) {
