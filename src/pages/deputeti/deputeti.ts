@@ -56,8 +56,7 @@ export class DeputetiPage {
 
   doInfinite(infiniteScroll: any) {
     
-    console.log('doInfinite, start is currently '+this.start);
-    this.start += 20;
+    this.start += 5;
 
     this.loadPosts()
     .then((promise)=>{
@@ -66,6 +65,7 @@ export class DeputetiPage {
       } else {
         infiniteScroll.enable(false);
       }
+      //this.loader.present();
     }) 
   }
 
