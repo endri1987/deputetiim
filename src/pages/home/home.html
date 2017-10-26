@@ -9,49 +9,35 @@
 		  	<img src="assets/img/logoWhite.png"/>
 		  </p>
 		</div>
-		<!--     <ion-title>
-		  Page Title
-		</ion-title>
-		-->
 	</ion-navbar>
 </ion-header>
 
 <ion-content>
-	
-<!-- <ion-grid>
-	<ion-col col-12>
-		<div class="banner">
-			<img src="assets/img/tirana.jpg"/>
-		</div>
-	</ion-col>
-</ion-grid> -->
+	<!-- <ion-grid>
+		<ion-col col-12>
+			<div class="banner">
+				<img src="assets/img/tirana.jpg"/>
+			</div>
+		</ion-col>
+	</ion-grid> -->
 
-<div class="dash">
-
-<ion-grid>
-	
-		<div class="mainDash">
-	<ion-row>
-
-
-			<ion-col class="fadeIn" col-6 *ngFor="let p of pages" (click)="openPage(p)" class="{{p.bg}}">
-				<div class="main_grid">
-					<ion-icon name="{{p.icon}}"></ion-icon>
-			<!-- 		<button ion-button full class="myIonicButton">
-						{{p.title}}
-					</button> -->
-					<div class="main_title">
-						<div>{{p.title}}</div>
-					</div>
-				</div>
-			</ion-col>
-
-
-	</ion-row>	
-		</div>
-
-
-
-</ion-grid>
-</div>
+	<div class="dash">
+		<ion-grid>			
+			<div class="mainDash">
+				<ion-row>
+					<ion-col class="fadeIn" col-6 *ngFor="let p of pages" (click)="openPage(p)" class="{{p.bg}}">
+						<div class="main_grid">
+							<img class="home-b-icon" src="{{graphics}}{{p.icon}}" />
+					<!-- 		<button ion-button full class="myIonicButton">
+								{{p.title}}
+							</button> -->
+							<div class="main_title">
+								<div>{{p.title}}</div>
+							</div>
+						</div>
+					</ion-col>
+				</ion-row>	
+			</div>
+		</ion-grid>
+	</div>
 </ion-content>
