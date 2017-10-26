@@ -354,7 +354,7 @@ p{
 
 //contact
 
-.contactStyle{
+.contactStyle, .pyetStyle{
   .item-block{
     background-color:#fff !important;
   }
@@ -364,5 +364,15 @@ p{
 .deputetiStyle{
   .item-block{
     background-color:#fff;
+  }
+}
+
+.pyetStyle{
+  .item{
+    padding:0;
+    font-size: 1.1em;
+  }
+  .ion-textarea{
+    color: #000 !important;
   }
 }

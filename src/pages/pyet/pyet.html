@@ -10,4 +10,40 @@
 
 <ion-content>
 	 <p padding>Qytetarët mund të njihen përmes platformës www.deputetim.al për thelbin e secilit ligj, risitë, ndikimin dhe problematikën që sjellin</p>
+
+<div class="pyetStyle">
+     <ion-list inset>
+          <form #myForm='ngForm' (ngSubmit)="onSubmit(myForm)">
+     
+             <ion-item>
+                  <ion-label floating>Emri Mbiemri *</ion-label>
+                  <ion-input type="text" [(ngModel)]="emri" name="Emri"></ion-input>
+              </ion-item>
+     
+              <ion-item>
+                  <ion-label floating>Qyteti</ion-label>
+                  <ion-input type="text" [(ngModel)]="qyteti" name="Qyteti"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label floating>Mesazhi</ion-label>
+                  <ion-textarea type="text" [(ngModel)]="message" name="Mesazhi"></ion-textarea>
+              </ion-item> 
+              <ion-item>
+                  <ion-label floating>Email</ion-label>
+                  <ion-textarea type="text" [(ngModel)]="email" name="Email"></ion-textarea>
+              </ion-item>
+                <ion-item>
+                  <ion-label floating>Deputeti</ion-label>
+                  <ion-textarea type="text" [(ngModel)]="deputeti" name="Deputeti"></ion-textarea>
+              </ion-item>
+               <ion-item>
+                  <ion-label floating>Pyetja</ion-label>
+                  <ion-textarea type="text" [(ngModel)]="pyetja" name="Pyetja"></ion-textarea>
+              </ion-item>
+              
+          </form>
+      </ion-list>
+   </div>
+
+
 </ion-content>  
