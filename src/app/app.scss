@@ -94,7 +94,7 @@
   // box-shadow: 1px 2px 2px #2967a0;
   // padding: 20px 0;
   // background-color: #3499db;
-  padding:0;
+  padding:10px 5px;
   margin: 0;
   height: 100px;
 
@@ -357,5 +357,12 @@ p{
 .contactStyle{
   .item-block{
     background-color:#fff !important;
+  }
+}
+
+
+.deputetiStyle{
+  .item-block{
+    background-color:#fff;
   }
 }
