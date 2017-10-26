@@ -8,17 +8,30 @@
 </ion-header>
 
 <ion-content>
-  
+
+
+   <div class="contactStyle">
+     <ion-list inset>
+          <form #myForm='ngForm' (ngSubmit)="onSubmit(myForm)">
+     
+             <ion-item>
+                  <ion-label floating>Email</ion-label>
+                  <ion-input type="text" [(ngModel)]="subject" name="Email"></ion-input>
+              </ion-item>
+     
+              <ion-item>
+                  <ion-label floating>Pershkrimi</ion-label>
+                  <ion-input type="text" [(ngModel)]="subject" name="Pershkrimi"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label floating>Mesazhi</ion-label>
+                  <ion-textarea type="text" [(ngModel)]="message" name="Mesazhi"></ion-textarea>
+              </ion-item>
+              
+          </form>
+      </ion-list>
+   </div>
+
+
 </ion-content>  
-
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
-</ion-content>
-
 
