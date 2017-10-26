@@ -21,6 +21,7 @@ import { SondazhedhevlerësimePage } from '../sondazhedhevlerësime/sondazhedhev
 export class HomePage {
 
   pages: Array<{title: string, component: any, icon: string, bg: string }>;
+  graphics: string = "../../graphics/";
 
   constructor(public navCtrl: NavController) {
     this.pages = [
@@ -38,14 +39,11 @@ export class HomePage {
       { title: 'Sondazhe dhe vlerësime', component: SondazhedhevlerësimePage, icon: 'md-contacts' , bg: 'sondazhe'},
     ]; 
   }
-
+ipt
   openPage(page) {
     this.navCtrl.push(page.component);
   }
 }
-@Component({
-  templateUrl: 'template.html'
-})
-export class ImagePage { }
+
 
 
