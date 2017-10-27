@@ -24,6 +24,7 @@ import { GrupetParlamentarePage } from '../pages/grupetparlamentare/grupetparlam
 import { InstitucionetPavaruaraPage } from '../pages/institucionetepavaruara/institucionetepavaruara';
 import { SondazhedhevlerësimePage } from '../pages/sondazhedhevlerësime/sondazhedhevlerësime';
 import { DetailsPage } from '../pages/details/details';
+import { DeputetiDetailsPage } from '../pages/deputeti/details/details';
 
 import { HistorikuModal } from '../pages/parlamenti/modals/historiku/historiku';
 import { DrejtuesModal } from '../pages/parlamenti/modals/drejtues/drejtues';
@@ -109,7 +110,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     InstitucionetPavaruaraPage,
     SondazhedhevlerësimePage,
     NenkomisionetModal2,
-    DetailsPage
+    DetailsPage,
+    DeputetiDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -164,7 +166,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     InstitucionetPavaruaraPage,
     SondazhedhevlerësimePage,
     NenkomisionetModal2,
-    DetailsPage 
+    DetailsPage,
+    DeputetiDetailsPage 
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, LoadingController ,ToastController } from 'ionic-angular';
 import { DeputetetService } from '../../providers/deputetet-service';
+import { DeputetiDetailsPage } from './details/details';
 
 @Component({
   selector: 'page-deputeti',
@@ -69,9 +70,10 @@ export class DeputetiPage {
     }) 
   }
 
-  // viewPost(post) {
-  //   this.navCtrl.push(DetailsPage, {
-  //     item: post
-  //   })
-  // }
+  viewPost(deputeti) {
+    this.navCtrl.push(DeputetiDetailsPage, {
+      item: deputeti
+    })
+  }
+
 }

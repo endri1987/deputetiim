@@ -9,12 +9,12 @@
 
   <div class="deputetiStyle">
     <ion-list>
-      <ion-item *ngFor="let deputeti of deputetetList">
+      <ion-item *ngFor="let deputeti of deputetetList" (click)="viewPost(deputeti)">
         <ion-avatar item-start>
           <img src="{{deputeti.fotografia}}">
         </ion-avatar>
         <h2>{{deputeti.emrimbiemri}}</h2>
-        <p>Ugh. As if. title111111</p>
+        <p>{{deputeti.partia}} | {{deputeti.qarku}}</p>
       </ion-item>
     </ion-list>
     
