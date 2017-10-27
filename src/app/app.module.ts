@@ -56,6 +56,8 @@ import { KPuneModal } from '../pages/komisionet/modals/kpune/kpune';
 import { KEdukimModal } from '../pages/komisionet/modals/kedukim/kedukim';
 import { NenkomisionetModal2 } from '../pages/komisionet/modals/nenkomisionet/nenkomisionet';
 
+import { SeancatModal } from '../pages/seancat/modal/smodal';
+
 import { DeputetetService } from '../providers/deputetet-service';
 import { PostService } from '../providers/post-service';
 
@@ -107,6 +109,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     KTregtiModal,
     KPuneModal,
     KEdukimModal,
+    SeancatModal,
     InstitucionetPavaruaraPage,
     SondazhedhevlerësimePage,
     NenkomisionetModal2,
@@ -163,11 +166,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     KTregtiModal,
     KPuneModal,
     KEdukimModal,
+    SeancatModal, 
     InstitucionetPavaruaraPage,
     SondazhedhevlerësimePage,
     NenkomisionetModal2,
     DetailsPage,
-    DeputetiDetailsPage 
+    DeputetiDetailsPage
   ],
   providers: [
     StatusBar,

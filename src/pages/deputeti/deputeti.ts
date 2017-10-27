@@ -13,6 +13,8 @@ export class DeputetiPage {
   public deputetetList: any = [];
   private loader: any;
   private start:number = 0;
+  private flag: number = 0;
+  private list: any;
 
   constructor(
     private navCtrl: NavController, 
@@ -21,7 +23,7 @@ export class DeputetiPage {
     private loadtCtrl: LoadingController ) {
   	this.loadPosts();
     this.loader = this.loadtCtrl.create({
-      duration: 3000
+      duration: 5000
     });
     this.loader.present();
   }
@@ -74,6 +76,29 @@ export class DeputetiPage {
     this.navCtrl.push(DeputetiDetailsPage, {
       item: deputeti
     })
+  }
+
+  filterItems(ev: any) {
+
+    let val = ev.target.value;
+
+    if (this.flag === 0) {
+      this.list = this.deputetetList;
+      this.flag = 1;
+    }
+
+    if (this.flag === 1 && val.length < 1 ) {
+      this.deputetetList = this.list;
+      this.flag = 0;
+    }    
+    return new Promise(resolve => {
+      this.deputetetService.filterByName(val)
+      .then(data => {
+
+        this.deputetetList = data;
+
+      });
+    });
   }
 
 }

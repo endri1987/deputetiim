@@ -10,4 +10,15 @@
 </ion-header>
 
 <ion-content>
+	<ion-col col-12>
+		<div [innerHtml]="seancatList.header"></div>
+
+	    <div class="total_listBlue">
+		    <ion-list class="listStyle">
+		        <button *ngFor="let item of seancatList.list" ion-item (click)="openModal(item)">
+		          {{ item.title }}
+		        </button>  
+		    </ion-list>
+	  	</div>
+  </ion-col>
 </ion-content>  

@@ -8,6 +8,8 @@
 <ion-content>
 
   <div class="deputetiStyle">
+    <ion-searchbar (ionInput)="filterItems($event)"></ion-searchbar>
+
     <ion-list>
       <ion-item *ngFor="let deputeti of deputetetList" (click)="viewPost(deputeti)">
         <ion-avatar item-start>

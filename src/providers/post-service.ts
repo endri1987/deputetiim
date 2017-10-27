@@ -25,4 +25,15 @@ export class PostService {
 	  });  
   }
 
+  loadSeancat(title:string) {
+    return new Promise(resolve => {
+      this.http.get(this.url+'?action=getByTitle&title='+title)
+      .map((res) => res.json())
+      .subscribe(data => {
+        
+        resolve(data);
+
+      });
+    });     
+  }
 }
