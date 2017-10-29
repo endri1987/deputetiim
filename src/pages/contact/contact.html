@@ -10,27 +10,30 @@
 <ion-content>
 
 
-   <div class="contactStyle">
-     <ion-list inset>
-          <form #myForm='ngForm' (ngSubmit)="onSubmit(myForm)">
-     
-             <ion-item>
-                  <ion-label floating>Email</ion-label>
-                  <ion-input type="text" [(ngModel)]="email" name="Email"></ion-input>
-              </ion-item>
-     
-              <ion-item>
-                  <ion-label floating>Pershkrimi</ion-label>
-                  <ion-input type="text" [(ngModel)]="subject" name="Pershkrimi"></ion-input>
-              </ion-item>
-              <ion-item>
-                  <ion-label floating>Mesazhi</ion-label>
-                  <ion-textarea type="text" [(ngModel)]="message" name="Mesazhi"></ion-textarea>
-              </ion-item>
-              
-          </form>
-      </ion-list>
-   </div>
+  <div class="contactStyle">
+    <ion-list inset>
+      <form #myForm='ngForm' (ngSubmit)="onSubmit(myForm)">
+   
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="text" [(ngModel)]="email" name="Email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Pershkrimi</ion-label>
+          <ion-input type="text" [(ngModel)]="subject" name="Pershkrimi"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Mesazhi</ion-label>
+          <ion-textarea type="text" [(ngModel)]="message" name="Mesazhi"></ion-textarea>
+        </ion-item>
+            
+        <button ion-button full>Dergo</button>
+      </form>
+    </ion-list>
+    
+  </div>
 
 
 </ion-content>  

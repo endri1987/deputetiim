@@ -3,28 +3,25 @@
 	  <ion-header>
 	    <ion-toolbar>
 
-
-	      <ion-title>  <p style="text-align:right;">
-		  	<img src="assets/img/logow14040.png"/>
-		  </p>
-
-
+	      <ion-title>  
+          <p style="text-align:right;">
+		  	    <img src="assets/img/logoWhite.png"/>
+		      </p>
 	      </ion-title>
+
 	    </ion-toolbar>
 	  </ion-header>
+
 	  <ion-content>
 
-
-
-            <ion-list>
-                <ion-item menuClose *ngFor="let p of pages">
-                    <ion-icon class="navIcon" name="{{p.icon}}"></ion-icon>
-                    <div class="mainNav" (click)="openPage(p)">
-                        {{p.title}}
-                    </div>
-                </ion-item>
-            </ion-list>
-
+      <ion-list>
+        <ion-item menuClose *ngFor="let p of pages">
+            <ion-icon class="navIcon" name="{{p.icon}}"></ion-icon>
+            <div class="mainNav" (click)="openPage(p)">
+                {{p.title}}
+            </div>
+        </ion-item>
+      </ion-list>
 
 	  </ion-content>
 	</ion-menu>
