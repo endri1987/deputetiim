@@ -25,6 +25,18 @@ export class DeputetetService {
 	  });  
   }
 
+  getAll() {
+		return new Promise(resolve => {
+	  	this.http.get(this.url+'?action=getAll&limit=140&offset=+0')
+	    .map((res) => res.json())
+	  	.subscribe(data => {
+	  		
+        //console.log(data);
+	      resolve(data);
+
+	    });
+	  });  
+  }	
   filterByName(name: string) {
 
   	return new Promise(resolve => {

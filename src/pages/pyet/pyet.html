@@ -13,36 +13,35 @@
 
 <div class="pyetStyle">
      <ion-list inset>
-          <form #myForm='ngForm' (ngSubmit)="onSubmit(myForm)">
+          <form #myForm2='ngForm' (ngSubmit)="onFormSubmit(myForm2)">
      
-             <ion-item>
-                  <ion-label floating>Emri Mbiemri *</ion-label>
-                  <ion-input type="text" [(ngModel)]="emri" name="Emri"></ion-input>
-              </ion-item>
+            <ion-item>
+              <ion-label floating>Emri Mbiemri *</ion-label>
+              <ion-input type="text" [(ngModel)]="emri" name="emri"></ion-input>
+            </ion-item>
      
-              <ion-item>
-                  <ion-label floating>Qyteti</ion-label>
-                  <ion-input type="text" [(ngModel)]="qyteti" name="Qyteti"></ion-input>
-              </ion-item>
-              <ion-item>
-                  <ion-label floating>Mesazhi</ion-label>
-                  <ion-textarea type="text" [(ngModel)]="message" name="Mesazhi"></ion-textarea>
-              </ion-item> 
-              <ion-item>
-                  <ion-label floating>Email</ion-label>
-                  <ion-textarea type="text" [(ngModel)]="email" name="Email"></ion-textarea>
-              </ion-item>
-                <ion-item>
-                  <ion-label floating>Deputeti</ion-label>
-					<ion-select>
-							<ion-option>asdasdasd</ion-option>
-					</ion-select>
-              </ion-item>
-               <ion-item>
-                  <ion-label floating>Pyetja</ion-label>
-                  <ion-textarea type="text" [(ngModel)]="pyetja" name="Pyetja"></ion-textarea>
-              </ion-item>
-              
+            <ion-item>
+                <ion-label floating>Qyteti</ion-label>
+                <ion-input type="text" [(ngModel)]="qyteti" name="qyteti"></ion-input>
+            </ion-item>
+            
+            <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-textarea type="text" [(ngModel)]="email" name="email"></ion-textarea>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label floating>Deputeti</ion-label>
+  					  <ion-select [(ngModel)]="deputeti" name="deputeti">
+  							<ion-option *ngFor="let deputeti of deputetetList">{{deputeti.emrimbiemri}}</ion-option>
+  					  </ion-select>
+            </ion-item>
+            
+            <ion-item>
+                <ion-label floating>Pyetja</ion-label>
+                <ion-textarea type="text" [(ngModel)]="pyetja" name="pyetja"></ion-textarea>
+            </ion-item>
+            <button ion-button full (click)="onFormSubmit()">Dergo</button>
           </form>
       </ion-list>
    </div>
