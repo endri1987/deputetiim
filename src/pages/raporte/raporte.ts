@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { PostService } from '../../providers/post-service';
 
 @Component({
   selector: 'page-raporte',
@@ -7,8 +8,25 @@ import { NavController } from 'ionic-angular';
 })
 export class RaportePage {
 
-  constructor(public navCtrl: NavController) {
+  public raportetList: any = [];
 
+  constructor(public navCtrl: NavController, private postService: PostService) {
+    this.loadSeancat();
   }
 
+
+  loadSeancat() {
+	  return new Promise(resolve => {
+      
+      this.postService.loadSeancat("STUDIME DHE RAPORTE")
+      .then(data => {
+
+        this.raportetList = data;
+ 
+        console.log(this.raportetList)  	
+          
+      });
+            
+    });
+  }
 }

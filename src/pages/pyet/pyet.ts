@@ -31,27 +31,29 @@ export class PyetPage {
   }
 
 	onFormSubmit(formData) {
-    console.log(formData);  
-   //  this.myData.email = formData.controls['emri'];
-   //  this.myData.email = formData.controls['qyteti'];
-   //  this.myData.email = formData.controls['email'];
-  	// this.myData.pershkrimi = formData.controls['deputeti'];
-  	// this.myData.mesazhi = formData.controls['pyetja'];
+    if (formData){  
+      console.log(formData);  
+     //  this.myData.email = formData.controls['emri'];
+     //  this.myData.email = formData.controls['qyteti'];
+     //  this.myData.email = formData.controls['email'];
+    	// this.myData.pershkrimi = formData.controls['deputeti'];
+    	// this.myData.mesazhi = formData.controls['pyetja'];
 
-  	let headers = new Headers();
+    	let headers = new Headers();
 
-  	headers.append(
-  	    'Content-Type',
-  	    'application/json; charset=utf-8'
-  	  );
+    	headers.append(
+    	    'Content-Type',
+    	    'application/json; charset=utf-8'
+    	  );
 
-  	this.http.post('/', JSON.stringify(this.myData), headers)
-  	  .subscribe(
-  	    () => {
+    	this.http.post('/', JSON.stringify(this.myData), headers)
+    	  .subscribe(
+    	    () => {
 
-  	      },
-  	    err => console.error(err)    
-	  );         
+    	      },
+    	    err => console.error(err)    
+  	  );         
+    }
   }	
 
   getAll() {

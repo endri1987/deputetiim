@@ -13,4 +13,11 @@
 </ion-header>
 
 <ion-content>
+  <ion-list *ngFor="let raporti of raportetList">
+    <ion-list-header>{{raporti.title}}</ion-list-header>
+
+    <div [innerHTML]="raporti.content"> </div>
+
+    <a href="{{raporti.link}}"> Lexo me shume </a>
+  </ion-list>
 </ion-content>  
