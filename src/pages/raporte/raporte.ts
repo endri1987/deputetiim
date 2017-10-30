@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PostService } from '../../providers/post-service';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @Component({
   selector: 'page-raporte',
@@ -10,7 +11,7 @@ export class RaportePage {
 
   public raportetList: any = [];
 
-  constructor(public navCtrl: NavController, private postService: PostService) {
+  constructor(public navCtrl: NavController,public iab:InAppBrowser, private postService: PostService) {
     this.loadSeancat();
   }
 
@@ -29,4 +30,9 @@ export class RaportePage {
             
     });
   }
+
+  openPdf(url) {
+    let browser = this.iab.create(url);
+    browser.show();
+  }  
 }
