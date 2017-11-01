@@ -4,20 +4,16 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Studime dhe Raporte</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="presentPopover($event)">
-        <ion-icon name="more"></ion-icon>
-      </button>
-    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-list *ngFor="let raporti of raportetList">
-    <ion-list-header>{{raporti.title}}</ion-list-header>
+    <ion-list-header class="raporte-header">{{raporti.title}}</ion-list-header>
 
-    <div [innerHTML]="raporti.content"> </div>
+    <p style="background: white"> {{raporti.content}} </p>
 
-    <a href="{{raporti.link}}"> Lexo me shume </a>
+    <button small class="read-more-btn" ion-button (click)="openPdf(raporti.link)">Lexo me shume</button>
+
   </ion-list>
 </ion-content>  

@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { FindsPage } from '../pages/finds/finds';
 import { TabsPage } from '../pages/tabs/tabs';
 import { PublicationsPage } from '../pages/publications/publications';
+import { ImpresumPage } from '../pages/impresum/impresum';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,10 +27,11 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Kreu', component: TabsPage, icon: 'home'},
-      { title: 'Rreth Projektit', component: AboutPage, icon: 'moon'},
-      { title: 'Publikime', component: PublicationsPage, icon: 'moon'},
-      { title: 'Gjetjet Kryesore', component: FindsPage, icon: 'star'},
-      { title: 'Kontakto', component: ContactPage, icon: 'flag'},
+      { title: 'Rreth Projektit', component: AboutPage, icon: 'ios-document'},
+      { title: 'Publikime', component: PublicationsPage, icon: 'ios-paper'},
+      { title: 'Gjetjet Kryesore', component: FindsPage, icon: 'md-star'},
+      { title: 'Impresum', component: ImpresumPage, icon: 'ios-information-circle'},
+      { title: 'Kontakto', component: ContactPage, icon: 'md-mail'},
     ];      
   } 
 

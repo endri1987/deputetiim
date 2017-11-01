@@ -25,6 +25,7 @@ import { InstitucionetPavaruaraPage } from '../pages/institucionetepavaruara/ins
 import { SondazhedhevlerësimePage } from '../pages/sondazhedhevlerësime/sondazhedhevlerësime';
 import { DetailsPage } from '../pages/details/details';
 import { DeputetiDetailsPage } from '../pages/deputeti/details/details';
+import { ImpresumPage } from '../pages/impresum/impresum';
 
 import { HistorikuModal } from '../pages/parlamenti/modals/historiku/historiku';
 import { DrejtuesModal } from '../pages/parlamenti/modals/drejtues/drejtues';
@@ -114,7 +115,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SondazhedhevlerësimePage,
     NenkomisionetModal2,
     DetailsPage,
-    DeputetiDetailsPage
+    DeputetiDetailsPage,
+    ImpresumPage
   ],
   imports: [
     BrowserModule,
@@ -171,7 +173,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SondazhedhevlerësimePage,
     NenkomisionetModal2,
     DetailsPage,
-    DeputetiDetailsPage
+    DeputetiDetailsPage,
+    ImpresumPage
   ],
   providers: [
     StatusBar,
