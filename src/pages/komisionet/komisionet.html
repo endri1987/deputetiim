@@ -10,9 +10,7 @@
 
 <ion-content>
 
-  <div class="komisionetStyle">
-    <ion-grid>
-      
+  <div class="komisionetStyle" padding>
       <ion-col col-12>
         <h3>Komisionet Parlamentare</h3>
         <p>Komisionet për mbrojtje dhe siguri janë organe të
@@ -31,17 +29,11 @@
           vazhdimësi më të madhe dhe mundësojnë krijimin e
           ekspertizës së anëtarëve.</p>
       </ion-col>
-    
-      <ion-col col-12>
-        <ion-list *ngFor="let modal of items">
-           <ion-list-header>{{modal.category}}</ion-list-header>
-            <button ion-item *ngFor="let item of modal.items" (click)="openModal(item.component)">
-              {{ item.title }}
-            </button>  
-        </ion-list>
-      </ion-col>  
-    
-    </ion-grid>
-  </div>
-
+  </div> 
+  <ion-list *ngFor="let komisioni of komisionetList">
+     <ion-list-header>{{komisioni.title}}</ion-list-header>
+      <button ion-item *ngFor="let item of komisioni.list" (click)="openModal(item)">
+        {{ item.title }}
+      </button>  
+  </ion-list>
 </ion-content>  

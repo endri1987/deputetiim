@@ -37,6 +37,7 @@ export class DeputetetService {
 	    });
 	  });  
   }	
+  
   filterByName(name: string) {
 
   	return new Promise(resolve => {

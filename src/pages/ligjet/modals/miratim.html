@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Ligjet e miratuara</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <div *ngFor="let ligji of ligjetList">
+      <button ion-item (click)="openModal(ligji)">
+        {{ligji[1] | slice:0:30}}
+      </button>
+    </div>  
+  </ion-list>
+</ion-content>  

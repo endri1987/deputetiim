@@ -406,3 +406,40 @@ h2, .raporte-header, .raporte-header .label {
 .find_content {
   padding-top: 5px
 }
+
+button {
+  color: #fff !important;
+}
+
+ion-list-header {
+  color: #1d3a5b !important;
+  height: 100%
+}
+.side-menu {
+  background: #1b3a5c !important;
+  height: 100%;
+}
+.side-menu .item-inner{
+  padding-left: 16px
+}
+
+.side-menu .item {
+  padding-left: 0 !important    
+}
+tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true] {
+    color: #fff !important;
+    border-top: 4px solid #d4313a;
+}
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    color: #fff;
+}
+
+.tabs-ios .tabbar {
+  border : none
+}
+
+.tableSeparator {
+  text-align: center;
+  color: #1d3a5b
+}

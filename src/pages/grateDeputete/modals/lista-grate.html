@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Lista e grave deputete 2017-2021
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="white" showWhen="ios">Mbyll</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>  
+</ion-header>
+
+<ion-content padding>
+    <ion-list style="background:#fff !important">
+      <ion-item *ngFor="let deputeti of grateList">
+        <h2 style="color:#fff !important">{{deputeti[0]}}</h2>
+        <p>{{deputeti[1]}} | {{deputeti[2]}}</p>
+      </ion-item>
+    </ion-list>
+</ion-content>

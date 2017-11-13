@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{content[1] | slice:0:30}}
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="white" showWhen="ios">Mbyll</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ul>
+    <li><strong>Date:</strong> {{content[0]}} </li>
+    <li><strong>Ligji/Projektligji: </strong> {{content[1]}} </li>
+    <li><strong>Vota Pro: </strong> {{content[2]}} </li>
+    <li><strong>Vota Kunder: </strong> {{content[3]}} </li>
+    <li><strong>Nuk Votuan: </strong> {{content[4]}} </li>
+  </ul>
+</ion-content>  

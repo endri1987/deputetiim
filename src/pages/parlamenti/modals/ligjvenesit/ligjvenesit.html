@@ -13,23 +13,15 @@
 </ion-header>
 
 <ion-content>
-  <ion-grid>
     
-    <ion-col col-12>
-      <p>Funksioni, historia, legjislacioni, legjislatura, struktura drejtuese
-      Jeta parlamentare në Shqipëri daton më 1920. Pas vetëm katër vitesh sistem konkurrues partiak Shqipëria kaloi në sistem politik pa parti politike, më pas në Luftën e Dytë Botërore, më pas për 46 vjet, me sistem njëpartiak. Pluralizmi politik u lejua më 1990 dhe prej vitit 1991 parlamenti funksionon pa ndërprerje në formësim të funksionit si institucioni kryesor në sistemin politik e qeverisës.</p>
+  <div class="pubList">
+    <ion-list>
+      <div>
+        <button ion-item (click)="openPdf('https://www.parlament.al/wp-content/uploads/2015/10/LIGJV--N--SIT-1920-2013.pdf')">
+          Klikoni per te pare Ligjvenesit Shqiptare ne vite
+        </button>
+      </div>  
+    </ion-list>
+  </div> 
 
-      <p>Përgjatë më shumë se dy dekadave institucioni i parlamentit ka tentuar të krijojë profilin e tij kushtetues, si dhe të luajë rol aktiv në jetën politike. Me arritje dhe dështime ai ka krijuar tashmë një traditë të brishtë dhe është pranuar si institucioni kryesor politik përfaqësues dhe vendimmarrës.</p>
-    </ion-col>
-
-    <ion-col col-12>
-      <ion-list>
-        <button ion-item *ngFor="let item of items" (click)="openModal(item
-        )">
-          {{ item.title }}
-        </button>  
-      </ion-list>
-    </ion-col>  
-
-  </ion-grid>
 </ion-content>  

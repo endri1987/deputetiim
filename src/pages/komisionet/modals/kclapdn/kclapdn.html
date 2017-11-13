@@ -16,10 +16,10 @@
   
   <ion-grid>
     <ion-col col-12>
-      <h3 class="mainTitleModal"> KOMISIONI PËR ÇËSHTJET LIGJORE, ADMINISTRATËN PUBLIKE DHE TË DREJTAT E NJERIUT </h3>
-      <p>Komisioni për Çështjet Ligjore, Administratën Publike dhe të Drejtat e Njeriut shqyrton brenda fushave të përgjegjësisë projektligjet, projektvendimet dhe çështjet e tjera që paraqiten në Kuvend, kryen studime për efektivitetin e ligjeve në fuqi, ndjek zbatimin e ligjeve dhe kontrollon veprimtarinë e ministrive dhe të organeve të tjera qendrore, duke i propozuar Kuvendit ose Këshillit të Ministrave marrjen e masave përkatëse, si dhe propozon për miratim në Kuvend projektligje, projektdeklarata ose projektrezoluta.
-Fushat e përgjegjësisë:
-Kodet dhe organizimi i pushtetit gjyqësor, administrata publike, administrata e pushtetit gjyqësor, organizimi dhe funksionimi i pushtetit vendor, shërbimet e pavarura në sistemin e drejtësisë dhe të drejtat e njeriut. </p>
+      <h3 class="mainTitleModal"> {{content.title}} </h3>
+      <ul>
+        <li *ngFor="let item of content.list">{{item}}</li>
+      </ul>
     </ion-col>
   </ion-grid>    
 

@@ -3,9 +3,14 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Institucionet Te Pavaruara</ion-title>
+    <ion-title>Institucionet Parlamentare</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+  <ion-list >
+    <div *ngFor="let institucioni of institucionetList">
+      <button ion-item (click)="openPdf(institucioni.link)">{{institucioni.title}}</button>
+    </div>  
+  </ion-list>
 </ion-content>  

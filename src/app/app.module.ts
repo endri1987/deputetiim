@@ -46,18 +46,16 @@ import { KomisionetModal } from '../pages/parlamenti/modals/komisionet/komisione
 import { NenkomisionetModal } from '../pages/parlamenti/modals/nenkomisionet/nenkomisionet';
 import { KeshillatModal } from '../pages/parlamenti/modals/keshillat/keshillat';
 import { GrupetModal } from '../pages/parlamenti/modals/grupet/grupet';
+import { ListaGrateModal } from '../pages/grateDeputete/modals/lista-grate';
+import { FjalimetModal } from '../pages/deputeti/modals/fjalimetModal';
 
 import { KclapdnModal } from '../pages/komisionet/modals/kclapdn/kclapdn';
-import { KIntegrimModal } from '../pages/komisionet/modals/kintegrim/kintegrim';
-import { KPJashtModal } from '../pages/komisionet/modals/kpjasht/kpjasht';
-import { KEkonomiModal } from '../pages/komisionet/modals/kekonomi/kekonomi';
-import { KSiguriModal } from '../pages/komisionet/modals/ksiguri/ksiguri';
-import { KTregtiModal } from '../pages/komisionet/modals/ktregti/ktregti';
-import { KPuneModal } from '../pages/komisionet/modals/kpune/kpune';
-import { KEdukimModal } from '../pages/komisionet/modals/kedukim/kedukim';
-import { NenkomisionetModal2 } from '../pages/komisionet/modals/nenkomisionet/nenkomisionet';
 
 import { SeancatModal } from '../pages/seancat/modal/smodal';
+import { MiratimModal } from '../pages/ligjet/modals/miratim';
+import { LigjiDetails } from '../pages/ligjet/details/ligjidetails';
+import { projektLigjModal } from '../pages/ligjet/modals/projektLigj';
+import { GrupiModal } from '../pages/grupetparlamentare/modal/grupiModal';
 
 import { DeputetetService } from '../providers/deputetet-service';
 import { PostService } from '../providers/post-service';
@@ -103,20 +101,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GrupetParlamentarePage,
     GrupetModal,
     KclapdnModal,
-    KIntegrimModal,
-    KPJashtModal,
-    KEkonomiModal,
-    KSiguriModal,
-    KTregtiModal,
-    KPuneModal,
-    KEdukimModal,
     SeancatModal,
     InstitucionetPavaruaraPage,
     SondazhedhevlerësimePage,
-    NenkomisionetModal2,
     DetailsPage,
     DeputetiDetailsPage,
-    ImpresumPage
+    ImpresumPage,
+    ListaGrateModal,
+    FjalimetModal,
+    MiratimModal,
+    projektLigjModal,
+    GrupiModal,
+    LigjiDetails
   ],
   imports: [
     BrowserModule,
@@ -161,20 +157,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GrupetParlamentarePage,
     GrupetModal,
     KclapdnModal,
-    KIntegrimModal,
-    KPJashtModal,
-    KEkonomiModal,
-    KSiguriModal,
-    KTregtiModal,
-    KPuneModal,
-    KEdukimModal,
     SeancatModal, 
     InstitucionetPavaruaraPage,
     SondazhedhevlerësimePage,
-    NenkomisionetModal2,
     DetailsPage,
     DeputetiDetailsPage,
-    ImpresumPage
+    ImpresumPage,
+    ListaGrateModal,
+    FjalimetModal,
+    MiratimModal,
+    projektLigjModal,
+    GrupiModal,
+    LigjiDetails
   ],
   providers: [
     StatusBar,

@@ -24,7 +24,7 @@ export class SeancatPage {
 
         this.seancatList = data;
  
-        console.log(this.seancatList)  	
+        //console.log(this.seancatList)  	
           
       });
             

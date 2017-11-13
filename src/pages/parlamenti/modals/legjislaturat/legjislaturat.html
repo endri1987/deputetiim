@@ -13,4 +13,14 @@
 </ion-header>
 
 <ion-content>
+
+  <ion-grid padding>
+    
+    <!-- <h3 class="mainTitleModal">Drejtues në Vite</h3> -->
+    <ion-row class="underline" *ngFor="let legjislaturat of legjislaturatList">
+      <ion-col class="nameTable" *ngIf="(legjislaturat[0]!='')">{{legjislaturat[0]}}</ion-col>
+      <ion-col class="postiTable" [ngClass]="(legjislaturat[0]=='')?'tableSeparator':''">{{legjislaturat[1]}}</ion-col>
+    </ion-row> 
+
+  </ion-grid>   
 </ion-content>  

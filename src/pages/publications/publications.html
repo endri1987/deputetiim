@@ -12,18 +12,12 @@
 
   <div class="pubList">
     <ion-list>
-      <button ion-item (click)="openPdf('http://deputetim.al/wp-content/uploads/2017/10/RAPORT-1-MONITORIMI-I-KUVENDIT-JANAR-KORRIK-2016.pdf')">
-        Raport 1 – monitorimi i kuvendit janar – korrik 2016
-      </button>  
-     
-      <button ion-item (click)="openPdf('http://deputetim.al/wp-content/uploads/2017/10/RAPORT-2-MONITORIMI-I-KUVENDIT-SHTATOR-DHJETOR-2016.pdf')">
-       Raport 2 – monitorimi i kuvendit shtator – dhjetor 2016
-      </button>  
-       <button ion-item (click)="openPdf('http://deputetim.al/wp-content/uploads/2017/10/RAPORT-2-MONITORIMI-I-KUVENDIT-SHTATOR-DHJETOR-2016.pdf')">
-       Raport 3 – monitorimi i kuvendit janar – korrik 2017
-      </button> 
-    
-     </ion-list>
+      <div *ngFor="let publikim of publikimetList">
+        <button ion-item (click)="openPdf(publikim.link)">
+          {{publikim.title}}
+        </button>
+      </div>  
+    </ion-list>
   </div>
 
 

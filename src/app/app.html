@@ -1,31 +1,34 @@
 <ion-split-pane>	
+
 	<ion-menu [content]="content">
-	  <ion-header>
-	    <ion-toolbar>
+		<ion-header>
+			<ion-toolbar>
+				<img src="assets/img/1.png"/>
+			</ion-toolbar>
+		</ion-header>
 
-	      <ion-title>  
-          <p style="text-align:right;">
-		  	    <img src="assets/img/logoWhite.png"/>
-		      </p>
-	      </ion-title>
-
-	    </ion-toolbar>
-	  </ion-header>
-
-	  <ion-content>
-
-      <ion-list>
-        <ion-item menuClose *ngFor="let p of pages">
-            <ion-icon class="navIcon" name="{{p.icon}}"></ion-icon>
-            <div class="mainNav" (click)="openPage(p)">
-                {{p.title}}
-            </div>
-        </ion-item>
-      </ion-list>
-
-	  </ion-content>
+		<ion-content >
+			<div class="side-menu"> 
+				<ion-list class="side-menu">
+					<ion-item menuClose *ngFor="let p of pages">
+					<ion-icon class="navIcon" name="{{p.icon}}">
+						
+					</ion-icon>
+					<div class="mainNav" (click)="openPage(p)">
+						{{p.title}}
+					</div>
+					</ion-item>
+				</ion-list>
+				<ion-footer>
+					<img src="assets/img/aaa.png"/>
+				</ion-footer>	
+			</div>
+		</ion-content>
 	</ion-menu>
-	<ion-nav id="nav" #content [root]="rootPage" main name="app"></ion-nav>
+	<ion-nav id="nav" #content [root]="rootPage" main name="app">
+		
+	</ion-nav>
+
 </ion-split-pane>	
 
 

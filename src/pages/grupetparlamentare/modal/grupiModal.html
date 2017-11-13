@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+     {{grupi.title}}
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="white" showWhen="ios">Mbyll</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-col col-12>
+      <ul>
+        <li *ngFor="let item of grupi.list">{{item}}</li>
+      </ul>
+    </ion-col>
+  </ion-grid>    
+</ion-content>  

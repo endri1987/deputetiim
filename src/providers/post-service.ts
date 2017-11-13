@@ -25,9 +25,10 @@ export class PostService {
 	  });  
   }
 
-  loadSeancat(title:string) {
+  loadSeancat(title:string, filter:string = '') {
+    filter = '&filter='+filter;
     return new Promise(resolve => {
-      this.http.get(this.url+'?action=getByTitle&title='+title)
+      this.http.get(this.url+'?action=getByTitle&title='+title+filter)
       .map((res) => res.json())
       .subscribe(data => {
         
